@@ -98,7 +98,7 @@ CONFIG_SCHEMA = cv.Schema(
         cv.Optional(CONF_STATE_OF_CHARGE): sensor.sensor_schema(
             unit_of_measurement=UNIT_PERCENT,
             icon=ICON_STATE_OF_CHARGE,
-            accuracy_decimals=0,
+            accuracy_decimals=2,
             device_class=DEVICE_CLASS_EMPTY,
             state_class=STATE_CLASS_MEASUREMENT,
         ),
